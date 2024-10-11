@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://astrowp-blogs.netlify.app/sitemap-index.xml

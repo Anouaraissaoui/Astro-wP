@@ -1,0 +1,28 @@
+{
+  "API_URL": "https://iptv.instawp.xyz",
+  "site": {
+    "url": "https://astrowp-blogs.netlify.app"
+  },
+  "pages": {
+    "leftmenu": [
+      {
+        "title": "Projects",
+        "slug": "/projects/"
+      },
+      {
+        "title": "About",
+        "slug": "/about/"
+      }
+    ],
+    "rightmenu": [
+      {
+        "title": "Archive",
+        "slug": "/archive/"
+      },
+      {
+        "title": "Contact",
+        "slug": "/contact/"
+      }
+    ]
+  }
+}
