@@ -20,12 +20,7 @@ module.exports = {
           light: theme.colors.categoryLabel.light,
           dark: theme.colors.categoryLabel.dark,
         },
-        postUnderline: {
-          lightFrom: theme.colors.postUnderline.light.from,
-          lightTo: theme.colors.postUnderline.light.to,
-          darkFrom: theme.colors.postUnderline.dark.from,
-          darkTo: theme.colors.postUnderline.dark.to,
-        },
+        postUnderline: theme.colors.postUnderline, 
       },
       fontFamily: {
         sans: [fontFamily, ...defaultTheme.fontFamily.sans],
