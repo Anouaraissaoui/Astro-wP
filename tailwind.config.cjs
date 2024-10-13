@@ -17,14 +17,14 @@ module.exports = {
         accent: `var(--color-accent)`,
         gray: colors.neutral,
         categoryLabel: {
-          light: theme.colours.categoryLabel.light,
-          dark: theme.colours.categoryLabel.dark,
+          light: theme.colors.categoryLabel.light,
+          dark: theme.colors.categoryLabel.dark,
         },
         postUnderline: {
-          lightFrom: theme.colours.postUnderline.light.from,
-          lightTo: theme.colours.postUnderline.light.to,
-          darkFrom: theme.colours.postUnderline.dark.from,
-          darkTo: theme.colours.postUnderline.dark.to,
+          lightFrom: theme.colors.postUnderline.light.from,
+          lightTo: theme.colors.postUnderline.light.to,
+          darkFrom: theme.colors.postUnderline.dark.from,
+          darkTo: theme.colors.postUnderline.dark.to,
         },
       },
       fontFamily: {
@@ -89,7 +89,7 @@ module.exports = {
     function ({ addBase }) {
       addBase({
         ':root': {
-          '--color-accent': theme.colours.accent,
+          '--color-accent': theme.colors.accent,
         },
       });
     },
