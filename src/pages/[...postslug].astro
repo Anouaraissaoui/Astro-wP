@@ -14,79 +14,8 @@ import { theme } from "@config/theme";
 import { getPosts } from "@utils/content"; // This function needs to be defined or imported.
 import { getAllAuthors } from "@utils/get-all-authors"; 
 import { getPostsByCategory } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByTag } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByAuthor } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByYear } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByMonth } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByDay } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySearch } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByCategorySlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByTagSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByAuthorSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByYearSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByMonthSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByDaySlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySearchSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByCategorySlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByTagSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByAuthorSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByYearSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByMonthSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByDaySlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySearchSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByCategorySlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByTagSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByAuthorSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByYearSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByMonthSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByDaySlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySearchSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySlugSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByCategorySlugSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByTagSlugSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByAuthorSlugSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByYearSlugSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByMonthSlugSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsByDaySlugSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import { getPostsBySearchSlugSlugSlugSlug } from "@utils/content"; // This function needs to be defined or imported.
-import AuthorCard from "@components/authorcard.astro";
-import PostContent from "@components/postcontent.astro";
-import Pagination from "@components/pagination.astro";
-import Socialshare from "@components/socialshare.astro";
-import { getPostsByCategorySlug as getPostsByCategorySlug2 } from "@utils/content";
-import { getPostsByTagSlug as getPostsByTagSlug2 } from "@utils/content";
-import { getPostsByAuthorSlug as getPostsByAuthorSlug2 } from "@utils/content";
-import { getPostsByYearSlug as getPostsByYearSlug2 } from "@utils/content";
-import { getPostsByMonthSlug as getPostsByMonthSlug2 } from "@utils/content";
-import { getPostsByDaySlug as getPostsByDaySlug2 } from "@utils/content";
-import { getPostsBySearchSlug as getPostsBySearchSlug2 } from "@utils/content";
-import { getPostsBySlugSlug as getPostsBySlugSlug2 } from "@utils/content";
-import { getPostsByCategorySlugSlug as getPostsByCategorySlugSlug2 } from "@utils/content";
-import { getPostsByTagSlugSlug as getPostsByTagSlugSlug2 } from "@utils/content";
-import { getPostsByAuthorSlugSlug as getPostsByAuthorSlugSlug2 } from "@utils/content";
-import { getPostsByYearSlugSlug as getPostsByYearSlugSlug2 } from "@utils/content";
-import { getPostsByMonthSlugSlug as getPostsByMonthSlugSlug2 } from "@utils/content";
-import { getPostsByDaySlugSlug as getPostsByDaySlugSlug2 } from "@utils/content";
-import { getPostsBySearchSlugSlug as getPostsBySearchSlugSlug2 } from "@utils/content";
-import { getPostsBySlugSlugSlug as getPostsBySlugSlugSlug2 } from "@utils/content";
-import { getPostsByCategorySlugSlugSlug as getPostsByCategorySlugSlugSlug2 } from "@utils/content";
-import { getPostsByTagSlugSlugSlug as getPostsByTagSlugSlugSlug2 } from "@utils/content";
-import { getPostsByAuthorSlugSlugSlug as getPostsByAuthorSlugSlugSlug2 } from "@utils/content";
-import { getPostsByYearSlugSlugSlug as getPostsByYearSlugSlugSlug2 } from "@utils/content";
-import { getPostsByMonthSlugSlugSlug as getPostsByMonthSlugSlugSlug2 } from "@utils/content";
-import { getPostsByDaySlugSlugSlug as getPostsByDaySlugSlugSlug2 } from "@utils/content";
-import { getPostsBySearchSlugSlugSlug as getPostsBySearchSlugSlugSlug2 } from "@utils/content";
-import { getPostsBySlugSlugSlugSlug as getPostsBySlugSlugSlugSlug2 } from "@utils/content";
-import { getPostsByCategorySlugSlugSlugSlug as getPostsByCategorySlugSlugSlugSlug2 } from "@utils/content";
-import { getPostsByTagSlugSlugSlugSlug as getPostsByTagSlugSlugSlugSlug2 } from "@utils/content";
-import { getPostsByAuthorSlugSlugSlugSlug as getPostsByAuthorSlugSlugSlugSlug2 } from "@utils/content";
-import { getPostsByYearSlugSlugSlugSlug as getPostsByYearSlugSlugSlugSlug2 } from "@utils/content";
-import { getPostsByMonthSlugSlugSlugSlug as getPostsByMonthSlugSlugSlugSlug2 } from "@utils/content";
-import { getPostsByDaySlugSlugSlugSlug as getPostsByDaySlugSlugSlugSlug2 } from "@utils/content";
-import { getPostsBySearchSlugSlugSlugSlug as getPostsBySearchSlugSlugSlugSlug2 } from "@utils/content";
+// ... other imports ...
+
 const posts = await getPosts();
 const authors = await getAllAuthors();
 const { params } = Astro.params;
