@@ -1,6 +1,6 @@
 {
-  "meta_title": "Archive",
-  "meta_description": "Archive Meta Description",
+  "meta_title": "Blog Archive - config.site.name", 
+  "meta_description": "Browse through our extensive archive of blog posts covering various topics related to [website's niche].", 
   "noindex": false,
   "title": "Archive",
   "description": "See all blog posts we have published."

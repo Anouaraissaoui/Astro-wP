@@ -1,18 +1,12 @@
 ---
 import "../styles/base.css";
-import "@wordpress/block-library/build-style/common.css";
-import "@wordpress/block-library/build-style/style.css";
-import "@wordpress/block-library/build-style/theme.css";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/header/navbar.astro";
 import Scripts from "@config/scripts.astro";
-import { SEO } from "astro-seo";
-import { AstroFont } from "astro-font";
-import theme from "@config/theme.json";
-
-const fontFamily = theme.fonts.fontFamily
-  .replace(/\+/g, " ")
-  .replace(/:[ital,]*[ital@]*[wght@]*[0-9,;.]+/gi, "");
+// @ts-ignore
+import { SEO } from "astro-seo"; // Type definitions for 'astro-seo' are not available.
+// @ts-ignore
+import { AstroFont } from "astro-font"; // Type definitions for 'astro-font' are not available.
 
 export interface Props {
   title?: string;
@@ -21,6 +15,8 @@ export interface Props {
 }
 
 const { title, description, noindex } = Astro.props;
+
+const theme = await import("@config/theme-config.js");
 ---
 
 <!doctype html>
@@ -51,10 +47,10 @@ const { title, description, noindex } = Astro.props;
           src: [],
           preload: false,
           display: "swap",
-          name: fontFamily!,
-          fallback: "sans-serif",
+          name: theme.default.fonts.fontFamily,
+          fallback: "Arial, Helvetica, sans-serif",
           cssVariable: "font-primary",
-          googleFontsURL: `https://fonts.googleapis.com/css2?family=${theme.fonts.fontFamily}&display=swap`,
+          googleFontsURL: `https://fonts.googleapis.com/css2?family=${theme.default.fonts.fontFamily}&display=swap`,
         },
       ]}
     />

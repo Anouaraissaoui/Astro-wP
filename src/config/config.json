@@ -1,5 +1,5 @@
 {
-  "API_URL": "https://iptv.instawp.xyz",
+  "API_URL": "process.env.API_URL", 
   "site": {
     "url": "https://astrowp-blogs.netlify.app"
   },

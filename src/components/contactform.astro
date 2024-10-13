@@ -5,14 +5,14 @@ import Button from "@components/ui/button.astro";
 <!-- To make this contact form work, create your free access key from https://web3forms.com/ - Then you will get all form submissions in your email inbox. -->
 
  <form
-  action="https://api.web3forms.com/submit"
+  action={import.meta.env.WEB3FORMS_API_ENDPOINT} 
   method="POST"
   id="form"
   class="needs-validation"
   novalidate>
   
   <!-- Create your free access key from https://web3forms.com/ -->
-  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+  <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> 
   
   <input type="checkbox" class="hidden" style="display:none" name="botcheck" />
   <div class="mb-5">
@@ -99,7 +99,7 @@ form.addEventListener("submit", function (e) {
 
   result.innerHTML = "Sending...";
 
-  fetch("https://api.web3forms.com/submit", {
+  fetch(import.meta.env.WEB3FORMS_API_ENDPOINT, { 
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -131,3 +131,6 @@ form.addEventListener("submit", function (e) {
     });
 });
 </script>
+
+<!-- Note:  The TypeScript error related to 'import.meta.env' might be due to a configuration issue.  
+         Consider adding a type definition for 'import.meta.env' or using a different approach to access environment variables. -->

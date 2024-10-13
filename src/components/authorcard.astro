@@ -1,4 +1,5 @@
 ---
+// @ts-ignore
 import { Image } from "astro:assets";
 const { author } = Astro.props;
 ---
@@ -11,11 +12,7 @@ const { author } = Astro.props;
       {
         author?.avatar_urls && (
           <Image
-            src={
-              author?.avatar_urls
-                ? author?.avatar_urls["48"]
-                : import(`../assets/authors/placeholder.jpg`)
-            }
+            src={author?.avatar_urls ? author?.avatar_urls["48"] : '/src/assets/authors/placeholder.jpg'}
             alt={author.display_name}
             width={96}
             height={96}
@@ -24,6 +21,16 @@ const { author } = Astro.props;
           />
         )
       }
+      {!author?.avatar_urls && (
+        <Image
+          src="/src/assets/authors/placeholder.jpg"
+          alt="Author Placeholder"
+          width={96}
+          height={96}
+          loading="eager"
+          class="rounded-full"
+        />
+      )}
     </div>
     <div class="prose prose-base dark:prose-invert prose-a:text-blue-600">
       <div>

@@ -1,5 +1,5 @@
 {
-  "site_name": "AstroWP Blog",
+  "site_name": "config.site.name", 
   "legal": "All rights reserved.",
   "made_by": {
     "name": "AstroWP",

@@ -5,26 +5,18 @@
     },
     "enableSidebar": true
   },
-  "colours": {
+  "colors": {
     "accent": "#356dc9",
     "categoryLabel": {
       "light": "#156FF6",
       "dark": "#156FF6"
     },
-    "postUnderline": {
-      "light": {
-        "from": "#0ea5e961",
-        "to": "#a78bfa9c"
-      },
-      "dark": {
-        "from": "#a78bfa9c",
-        "to": "#0ea5e961"
-      }
-    }
+    "postUnderline": "#0ea5e9" 
   },
   "fonts": {
     "fontFamily": "Nunito:wght@400;500;700",
     "fontSizes": {
+      "default": ["1.15rem", "2rem"],
       "xs": ["0.75rem", "1rem"],
       "sm": ["0.975rem", "1.25rem"],
       "base": ["1.15rem", "2rem"],

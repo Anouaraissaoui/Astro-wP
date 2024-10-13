@@ -1,14 +1,14 @@
 {
   "meta_title": "Contact Us Page",
-  "meta_description": "Contact Us Meta Description",
+  "meta_description": "Have questions or need assistance? Contact us today! We're here to help with any inquiries you may have.", 
   "noindex": false,
   "title": "Contact Us",
   "description": "Get in touch, we are a here to help.",
   "details": {
     "title": "Contact Us",
     "description": "We are here to help. Fill up the form or send email or call phone.",
-    "address": "484 Fairway Drive, San Jose, CA 95113",
-    "email": "hello@example.com",
-    "phone": "707-413-0172"
+    "address": "484 Fairway Drive, San Jose, CA 95113", 
+    "email": "hello@example.com", 
+    "phone": "707-413-0172" 
   }
 }
